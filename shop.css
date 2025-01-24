@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --white-clr: #fff;
+    --black-clr: #000;
+    --light-black: #333;
+    --primary-clr: #e6303d;
+    --secondary-clr: #eee;
+    --tag-clr: #7cc576
+}
+a {
+    text-decoration:none;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: transform.3s ease-in-out;
+}
+li{
+    list-style: none;
+    
+
+}
+/* navbar */
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: (var(--light-black));
+}
+
+.link {
+    color: var(--light-black);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.navlist,.nav-icons {
+    display: flex;
+    flex-direction: row;
+    
+    
+    gap: 20px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 800px;
+    margin-top: 0px;
+    padding:10px ;
+    position: fixed;
+    background-color: white;
+    z-index: 99;
+    
+    
+    }
+span,.link-active,.link:hover,.icon:hover {
+    color:var(--primary-clr);
+}
+
+/* centre-image */
+
+.centre-text{
+    height: 100%;
+    width:100%;
+    position:absolute;
+    top:50%;
+    left:65%;
+    z-index: 5;
+    
+    }
+ .centre-text p{
+     font-size: 45px;
+     font-weight: 700;
+ }
+ #shop-now {
+    background-color: var(--primary-clr);
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10px;
+    
+ }
+ #shop-now:hover {
+    opacity: 80%;
+    cursor:pointer;
+    
+ }
+ /* for */
+ .for{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 20px;
+     }
+ .kids{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    
+ }
+ #for-men:hover,#for-women:hover ,#for-kids:hover ,#for-acessories:hover  {
+    transform:scale(1.06);
+   cursor: pointer; 
+   opacity: 80%;
+   transition:all 0.3s ease-in-out;
+      
+ }
+ #for-men,#for-women ,#for-kids ,#for-acessories{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    z-index: 2;
+
+ }
+ .for h1 {
+    background-color: #eee;
+    color: var(--black-clr);
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    text-transform: uppercase;
+    z-index: 3;
+   }
+   .for h1:hover {
+    background-color: var(--primary-clr);
+
+   }
